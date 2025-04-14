@@ -42,10 +42,10 @@ export function iterationCount(a) {
 */
 export function symbolsReplace(message) {
   let result = '';
-  let index = 0;
+  let index = 1;
 
   do {
-      if ((index + 1) % 3 === 0) {
+      if (index % 3 === 0) {
           result += '_';
       } else {
           result += message[index];
